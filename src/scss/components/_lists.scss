@@ -4,7 +4,7 @@
 ul.listing {
     list-style: none;
     margin-left: 0;
-    max-width: 960px;
+    max-width: 550px;
 
     h3 {
         border-left: 8px solid #444;
@@ -20,19 +20,16 @@ ul.listing {
     }
 
     li {
-        margin-bottom: 10px;
-
         a {
-            border-bottom: 1px dotted #8a8a8a;
+            border-bottom: 1px dotted #eaeaea;
             color: #333;
-            text-decoration-color: #333;
+            
 
             &:hover {
-                animation: disco 3s infinite;
+                color: #555;
+                border-bottom: 1px solid #555;
             }
         }
-
-        
     }
 }
 

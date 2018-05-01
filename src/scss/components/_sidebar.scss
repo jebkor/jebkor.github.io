@@ -17,14 +17,8 @@
     }
 
     img {
-        @extend %transition;
         border-radius: 50%;
         width: 150px;
-
-        &:hover {
-            @extend %transition;
-            transform: scale(1.075);
-        }
     }
 
     h1 {

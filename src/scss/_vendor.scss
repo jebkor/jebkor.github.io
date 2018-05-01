@@ -3,9 +3,7 @@
 // import the framework
 // @import "./../../node_modules/foundation-sites/scss/foundation";
 // @include foundation-everything(true);
-@import "foundation-sites/scss/foundation";
-@include foundation-everything(true);
-
+@import "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css";
 
 // font awesome
-@import "font-awesome/css/font-awesome.min";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
