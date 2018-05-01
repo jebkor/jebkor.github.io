@@ -35,6 +35,40 @@
 }
 
 
+@keyframes disco {
+    0%,100% {
+        color: #52edc7;
+        border-color: #52edc7
+    }
+
+    16% {
+        color: #1d62f0;
+        border-color: #1d62f0
+    }
+
+    32% {
+        color: #0bd318;
+        border-color: #0bd318
+    }
+
+    48% {
+        color: #ffcd02;
+        border-color: #ffcd02
+    }
+
+    64% {
+        color: #c644fc;
+        border-color: #c644fc
+    }
+
+    80% {
+        color: #ff2a68;
+        border-color: #ff2a68
+    }
+}
+
+
+
 // .grid-container.full {
 //     padding: 0 15px;
 // }
