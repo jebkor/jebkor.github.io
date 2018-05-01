@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-description: My very first, yet gibberish, post on my blog!
+description: egerg
 ---
 
 

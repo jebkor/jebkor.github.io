@@ -5,14 +5,12 @@ body {
 }
 
 h1 {
-    @extend %gradient-heading;
     @include font-size(40px);
     font-weight: 800;
     margin-bottom: 15px;
 }
 
 h2 {
-    @extend %gradient-heading;
     @include font-size(30px);
     font-weight: 800;
     margin-bottom: 15px;
@@ -20,27 +18,13 @@ h2 {
 
 
 h3 {
-    @extend %gradient-heading;
     @include font-size(24px);
     font-weight: 800;
     margin-bottom: 15px;
 }
 
 h4 {
-    @extend %gradient-heading;
     @include font-size(18px);
     font-weight: 800;
     margin-bottom: 15px;
-}
-
-
-blockquote {
-    background: #eee;
-    outline: 1px solid #E2E2E2;
-    padding: .5625rem 1.25rem .5625rem 1.1875rem;
-    
-    > * {
-        color: #444 !important;
-        margin: 0;
-    }
 }

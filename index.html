@@ -9,20 +9,26 @@ title: Home
   <div class="grid-x">
     <div class="small-12 columns cell">
       <div class="posts">
+        <!-- {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %} -->
 
         <br><br><br>
 
         <h1 class="heading-two">Welcome. Pull up a chair!</h1>
-        <p>This is my blog. I am happy that you are here, please go have a look around.</p>
                
-        <br><br><br>
 
         <ul class="listing">
-          {% for post in site.posts %} 
-          {% unless post.draft %} 
-          {% capture currentdate %}
-            {{post.date | date: "%Y"}}
-          {% endcapture %}
+          {% for post in site.posts %} {% unless post.draft %} {% capture currentdate %}{{post.date | date: "%Y"}}{% endcapture %}
           {% if currentdate != thedate %}
           <h3>{{ currentdate }}</h3>
           {% capture thedate %}{{currentdate}}{% endcapture %} {% endif %}
