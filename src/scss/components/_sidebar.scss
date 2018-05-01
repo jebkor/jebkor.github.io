@@ -1,0 +1,100 @@
+.sidebar,
+.off-canvas {
+    background-color: color(navigation_bg-color);
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 250px;
+
+    hr {
+        border-color: #555;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        @extend %transition;
+        border-radius: 50%;
+        width: 150px;
+
+        &:hover {
+            @extend %transition;
+            transform: scale(1.075);
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .lead.light {
+        @include font-size(16px);
+        color: #cecece;
+    }
+}
+
+.sidebar-links a,
+.offcanvas-links a {
+    color: #cecece;
+    &:hover {
+        color: darken(#cecece, 10%);
+    }
+}
+
+.off-canvas {
+    background-color: color(navigation_bg-color);
+}
+
+.title-bar {
+    background-color: transparent;
+    position: relative;
+
+    .menu-icon {
+        &::after {
+            background-color: #333;
+            box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+        }
+    }
+
+    .logo {
+        @extend %absolute-horizontal;
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+.big-logo {
+    @extend %absolute-horizontal;
+        margin-top: 15px;
+        width: 150px;
+    }
+
+
+.content {
+    max-width: 1024px;
+    min-height: 100vh;
+    margin-left: 250px;
+    position: relative;
+
+    @include bp(phone) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include bp(tablet) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include bp(laptop) {
+        margin-left: 250px;
+        margin-right: 0;
+    }
+}

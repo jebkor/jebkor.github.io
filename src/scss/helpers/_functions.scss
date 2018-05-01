@@ -1,0 +1,18 @@
+@function make-greener($value) {
+    @return $value + rgb(0, 50, 0);
+}
+
+@function calcRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+// function for getting colors from both complex and non-complex variable-maps
+@function color($color-name, $color-variant: null) {
+    // color variant is optional
+    @if ($color-variant != null) {
+        @return map-get(map-get($colors, $color-name), $color-variant);
+    } @else {
+        @return map-get($colors, $color-name);
+    }
+}
