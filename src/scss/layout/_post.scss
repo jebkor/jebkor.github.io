@@ -1,0 +1,72 @@
+.post {
+    margin-top: 30px;
+
+    &-title {
+        @include font-size(40px);
+        font-weight: 800;
+        margin-bottom: 45px;
+        background: #ff2a68;
+        background: linear-gradient(90deg, #ff2a68, #ff5e3a, #ff9500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-date {
+        @include font-size(10px);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 900;
+        color: #777;
+        text-transform: uppercase;
+    }
+
+    h1, h2, h3, h4 {
+        background: #ff2a68;
+        background: linear-gradient(90deg, #ff2a68, #ff5e3a, #ff9500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    a {
+        color: color(post-link);
+        &:hover {
+            animation: disco 3s infinite;
+        }
+    }
+
+    p {
+        line-height: 22px;
+    }
+}
+
+.related {
+    margin-top: 125px;
+}
+
+@each $button in "twitter" "facebook" "google" {
+    .share-button-#{$button} {
+        @include font-size(22px);
+        margin-right: 15px;
+    }
+}
+
+.might-need-this-for-later {
+    display: inline-block;
+    background-image: linear-gradient(
+        90deg,
+        #f79533 0%,
+        #f37055 15%,
+        #ef4e7b 30%,
+        #a166ab 44%,
+        #5073b8 58%,
+        #1098ad 72%,
+        #07b39b 86%,
+        #6dba82 100%
+    );
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+

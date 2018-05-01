@@ -1,0 +1,49 @@
+.menu a {
+    padding: .7rem .9rem;
+}
+ul.listing {
+    list-style: none;
+    margin-left: 0;
+    max-width: 960px;
+
+    h3 {
+        border-left: 8px solid #444;
+        padding-left: 10px;
+    }
+    span {
+        font-size: 10px;
+        color: #777;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        float: right;
+        font-weight: 900;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            border-bottom: 1px dotted #8a8a8a;
+            color: #333;
+            text-decoration-color: #333;
+
+            &:hover {
+                animation: disco 3s infinite;
+            }
+        }
+
+        
+    }
+}
+
+
+.menu.vertical {
+    li a {
+        padding-left: 0;
+        color: #cecece;
+
+        &:hover {
+            color: darken(#cecece, 10%);
+        }
+    }
+}

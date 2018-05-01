@@ -1,0 +1,55 @@
+@mixin bp($class) {
+    @if $class == phone {
+        @media (max-width: 39.9375em) {
+            @content;
+        }
+    } @else if $class == tablet {
+        @media (min-width: 40em) {
+            @content;
+        }
+    } @else if $class == laptop {
+        @media (min-width: 64em) {
+            @content;
+        }
+    } @else if $class == desktop {
+        @media (min-width: 90em) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint mixin supports: phone(xs), tablet(sm), laptop(md), desktop(lg) ";
+    }
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calcRem($size);
+}
+
+
+// ------------------------------
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}

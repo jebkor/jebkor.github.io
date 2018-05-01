@@ -1,0 +1,54 @@
+// map definitions
+$color-first: #333;
+$color-second: #eaeaea;
+$color-third: #653F4E;
+$color-fourth: #E5DED6;
+$color-fifth: #2B1131;
+
+$color-shade-amount: 15%;
+$color-trans-amount: 0.5;
+
+// prettier-ignore
+$colors: (
+    first: (
+        base: $color-first, 
+        light: lighten($color-first, $color-shade-amount),
+        dark: darken($color-first, $color-shade-amount),
+        trans: transparentize($color-first, $color-trans-amount)
+    ),
+    second: (
+        base: $color-second,
+        light: lighten($color-second, $color-shade-amount),
+        darken: darken($color-second, $color-shade-amount),
+        trans: transparentize($color-second, $color-trans-amount)
+    ),
+    third: (
+        base: $color-third,
+        light: lighten($color-third, $color-shade-amount),
+        darken: darken($color-third, $color-shade-amount),
+        trans: transparentize($color-third, $color-trans-amount)
+    ),
+    fourth: (
+        base: $color-fourth,
+        light: lighten($color-fourth, $color-shade-amount),
+        darken: darken($color-fourth, $color-shade-amount),
+        trans: transparentize($color-fourth, $color-trans-amount)
+    ),
+    fifth: (
+        base: $color-fifth,
+        light: lighten($color-fifth, $color-shade-amount),
+        darken: darken($color-fifth, $color-shade-amount),
+        trans: transparentize($color-fifth, $color-trans-amount)
+    ),
+    navigation_bg-color: #444,
+    sidebar-bg: #eaeaea,
+    
+    error-color: #a94442,
+    success-color: #00d1b2,
+    post-link: #5856d6
+);
+
+// variables outside of complex sass-maps
+$card-border-radius: 8px;
+$material-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+$gutter: 15px;
