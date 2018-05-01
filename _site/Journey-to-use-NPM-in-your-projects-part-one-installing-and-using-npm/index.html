@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+     
+      Journey to use NPM in your projects. Part One - Installing and using NPM &middot; Ramblings of a web-developer from Denmark 
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head> 
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <meta name="author" content="jebkor_" />
+
+    
+    <meta property="og:title" content="Journey to use NPM in your projects. Part One - Installing and using NPM" />
+    <meta property="twitter:title" content="Journey to use NPM in your projects. Part One - Installing and using NPM" />
+    
+
+     
+    <meta name="description" content="Part One of many blogposts about NPM and how you can use them, in your own projects">
+    <meta property="og:description" content="Part One of many blogposts about NPM and how you can use them, in your own projects" />
+    
+
+
+
+
+<body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <div class="offcanvas-about">
+    <h1>
+        <a href="/">
+            <img src="https://avatars1.githubusercontent.com/u/21107805?s=460&v=4" alt="">
+        </a>
+    </h1>
+
+    <div class="offcanvas-links">
+        <ul class="menu align-center">
+            <li>
+                <a href="https://www.twitter.com/jebkor_" title="Follow my ramblings on twitter" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.github.com/jebkor" title="Check out my GitHub" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.jebkor.dk" title="Check out my projects on my website" target="_blank">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/jebkor_" title="Follow my instagram" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:jesper@jebkor.dk" title="Send me a mail">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <p class="lead light">Ramblings of a web-developer from Denmark</p>
+</div>
+
+<hr>
+
+<div>
+    <ul class="menu vertical">
+        <li>
+            <a class="sidebar-nav-item" href="/">Home</a>
+        </li>
+              
+        <li>
+            <a class="sidebar-nav-item" href="/about/">About</a>
+        </li>
+                     
+    </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p style="position: absolute; bottom: 0;">&copy; 2017. All rights reserved.</p>
+
+      
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="sidebar show-for-large">
+  <div class="sidebar-about">
+    <h1>
+      <a href="/">
+        <img src="https://avatars1.githubusercontent.com/u/21107805?s=460&v=4" alt="">
+      </a>
+    </h1>
+
+    <div class="sidebar-links">
+      <ul class="menu align-center">
+        <li>
+          <a href="https://www.twitter.com/jebkor_" title="Follow my ramblings on twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.github.com/jebkor" title="Check out my GitHub" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jebkor.dk" title="Check out my projects on my website" target="_blank">
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jebkor_" title="Follow my instagram" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:jesper@jebkor.dk" title="Send me a mail">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <p class="lead light">Ramblings of a web-developer from Denmark</p>
+  </div>
+
+  <hr>
+
+  <div>
+    <ul class="menu vertical">
+      <li>
+        <a class="sidebar-nav-item" href="/">Home</a>
+      </li>
+       
+           
+      <li>
+        <a class="sidebar-nav-item" href="/about/">About</a>
+      </li>
+                   
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p style="position: absolute; bottom: 0;">&copy; 2017. All rights reserved.</p>
+</div>
+
+
+      <div class="content container">
+        <div class="title-bar hide-for-large">
+          <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-open="offCanvas"></button>
+          </div>
+
+          <img src="./../images/logo.svg" alt="Logo" class="logo">
+        </div>
+
+        <img src="./../images/logo.svg" alt="Logo" class="big-logo show-for-large">
+
+        <div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 columns cell">
+
+      <div class="post">
+
+        <br><br><br><br>
+
+        <span class="post-date">03 Dec 2017</span>
+        <h1 class="post-title">Journey to use NPM in your projects. Part One - Installing and using NPM</h1>
+        <p>Why hello there.</p>
+
+<p>My first real blog post. How exciting! And this blog post will be the first of, likely, many to teach <em>you</em> about NPM and how you can use it in <em>your</em> projects. If you’ve always wanted the ‘a-ha’ moment, when trying to figure out NPM, hopefully this journey will help you get there. Hopefully I can lift the veil and show you the ways of NPM.</p>
+
+<p><br /></p>
+
+<h2 id="what-is-npm">What is NPM?</h2>
+<p>NPM, or <em>Node Package Manager</em>, is as the name implies, a manager for packages used with/for Node.js. Packages can be a lot of different things: A CSS framework, a javascript framework or bits and pieces of reusable code you want to use in your projects.</p>
+
+<p><br /></p>
+
+<h2 id="why-would-i-use-npm">Why would I use NPM?</h2>
+<p>If you want to do everything the round-about and tough way, go ahead: rely on CDN’s or zip-downloaded files to use some library or chunk of code. If you, on the other hand would like to do everything the ‘short’ and easy way, use NPM.</p>
+
+<p><strong>Disclaimer:</strong> To use NPM packages to their fullest, it’s recommended that you look into build-systems or bundlers. If you know nothing about them, I will have a piece on it at a later date, but it could be worth checking out <a href="https://gulpjs.com">Gulp.js</a> or <a href="https://webpack.js.org/">Webpack</a>.</p>
+
+<p>With build-systems or bundlers, you can just include the package in your code, and when the code compiles, the package will be included on your website/in your application, without the need to rely on CDN’s to be up and running, or local files to exist. Neat, right?</p>
+
+<p><br /></p>
+
+<h2 id="okay-youve-sold-me-how-do-i-get-npm">Okay, you’ve sold me. How do I get NPM?</h2>
+<p>To be able to use NPM on your machine, you need to install Node.js. Node.js, if you don’t know, <em>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.</em> - 
+<a href="https://nodejs.org">Node.js</a></p>
+
+<p>To install Node.js, head to the webpage, and download the <em>recommended</em> version (as of writing this, it’s 8.9.1 LTS). The <em>latest features</em> version, is the most bleeding and cutting edge version, and are more likely to contain bugs that can impede your workflow, or stop NPM from working. In most cases, download the recommended version.</p>
+
+<p>You can check if you’ve successfully installed Node.js by opening a CMD or Terminal window, and type:</p>
+
+<blockquote>
+  <p>node -v</p>
+</blockquote>
+
+<p>A version number should now appear. Congrats! You’ve successfully installed Node.js</p>
+
+<p>Next, is to install NPM. You can do this by typing:</p>
+
+<blockquote>
+  <p>npm install npm@latest -g</p>
+</blockquote>
+
+<p>This will install the latest, stable version of NPM. the <em>-g</em>, or <em>-global</em> flag, means NPM will be installed globally, so the NPM keyword can be accessed anywhere on your computer. Other flags are available, and we will explore these later.</p>
+
+<p>To check if NPM is installed correctly, simply type the following in a CMD window:</p>
+
+<blockquote>
+  <p>npm -v</p>
+</blockquote>
+
+<p>A version number should appear, and that means you have successfully installed NPM. Way to go!
+Now you should be ready to get started with NPM. Go explore some packages!</p>
+
+<p><br /></p>
+
+<h2 id="dont-leave-me-yet-jesper">Don’t leave me yet, Jesper!</h2>
+<p>What, you want and example of usage as well? Fine, I’ll show you, how use your packages in the simplest yet worst way possible, just to get you started.</p>
+
+<p>Say you wanted to use the framework Moment.js to handle all kinds of dates, all you need to do is:</p>
+
+<blockquote>
+  <p>npm install moment –save</p>
+</blockquote>
+
+<p>This will install Moment.js as a dependency to your application, and download the files to a <em>node_modules</em> folder in your project root. Don’t worry, I will show the flow of installation as well as usage with Gulp.js next time.</p>
+
+<p>Next what you can do, which I <strong>highly</strong> suggest <strong>not</strong> doing, is link the node_modules file directly as a script:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./node_modules/moment/dist/moment.min.js"</span><span class="nt">/&gt;</span> <span class="c1">//or whatever the path is</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>I don’t want you to do this, because when your application hits production, the <em>node_modules</em> folder won’t exist on the server. Or rather, it shouldn’t exist on the server. This is why you would want a build-system or bundler to handle the compilation, where Moment.js is included.</p>
+
+<p>As my final demonstration, because I’ve already talked for a <em>loooong</em> while, this is how a file, that is compiled using Gulp.js and Babel, could look like:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="s1">'moment'</span><span class="p">;</span> <span class="c1">//import the moment library</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Moment</span><span class="p">().</span><span class="nx">format</span><span class="p">(</span><span class="s1">'MMMM Do YYYY'</span><span class="p">));</span>  <span class="c1">// December 3rd 2017</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>That’s it!. When the javascript file is compiled and the <em>bundles/built</em> file is included on your page, the output should show the current date in a console.log.</p>
+
+<p><br /></p>
+
+<h2 id="final-words">Final words</h2>
+<p>This is the end of Part One of the <em>Journey to use NPM in your project. Part One - Installing and using NPM</em>.</p>
+
+<p>My next post, will be explaining how to setup a simple Gulp.js project to compile Javascript files, explaining the –save and –save-dev flags in NPM and when to use either –save or –save-dev.</p>
+
+<p>Untill then, keep it frosty! ⛄</p>
+
+      </div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer class="clearfix">
+    <div class="grid-x">
+        <div class="small-12 medium-6 cell">
+            
+        </div>
+        <div class="small-12 medium-6 cell text-right">
+            <div class="share-page">
+                <a href="https://twitter.com/intent/tweet?text=Journey to use NPM in your projects. Part One - Installing and using NPM&url=https://blog.jebkor.dk/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/&via=jebkor_&related="
+                    rel="nofollow" target="_blank" title="Share on Twitter" class="share-button-twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com/sharer.php?u=https://blog.jebkor.dk/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/" rel="nofollow" target="_blank" title="Share on Facebook"
+                    class="share-button-facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://plus.google.com/share?url=https://blog.jebkor.dk/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/" rel="nofollow" target="_blank" title="Share on Google+"
+                    class="share-button-google">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).foundation();
+    });
+  </script>
+</body>
+
+</html>
