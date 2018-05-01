@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://blog.jebkor.dk/hello-world/</loc>
+<loc>https://blog.jebkor.dk/Hello-World/</loc>
 <lastmod>2017-11-13T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>https://blog.jebkor.dk/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/</loc>
+<loc>https://blog.jebkor.dk/journey-to-use-npm-part-one/</loc>
 <lastmod>2017-12-03T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://blog.jebkor.dk/journey-to-use-npm-part-two/</loc>
+<lastmod>2017-12-10T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://blog.jebkor.dk/about/</loc>
