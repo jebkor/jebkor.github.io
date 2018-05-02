@@ -1,6 +1,8 @@
 ---
 layout: page
 permalink: /about/
+title: "About"
+description: My about page
 ---
 
 ## Hi, my name is Jesper. Stay a while, and listen.
