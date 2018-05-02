@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-01T23:18:06+02:00</updated><id>http://localhost:4000/</id><title type="html">jebkor_</title><subtitle>Ramblings of a web-developer from Denmark</subtitle><entry><title type="html">Journey to use NPM in your projects. Part Two - Installing, managing and updating packages</title><link href="http://localhost:4000/journey-to-use-npm-part-two/" rel="alternate" type="text/html" title="Journey to use NPM in your projects. Part Two - Installing, managing and updating packages" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/journey-to-use-npm-part-two</id><content type="html" xml:base="http://localhost:4000/journey-to-use-npm-part-two/">&lt;p&gt;Welcome back. I hope you gained a little bit of insight from my last blog post.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-02T22:39:15+02:00</updated><id>http://localhost:4000/</id><title type="html">jebkor_</title><subtitle>Ramblings of a web-developer from Denmark</subtitle><entry><title type="html">Journey to use NPM in your projects. Part Two - Installing, managing and updating packages</title><link href="http://localhost:4000/journey-to-use-npm-part-two/" rel="alternate" type="text/html" title="Journey to use NPM in your projects. Part Two - Installing, managing and updating packages" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/journey-to-use-npm-part-two</id><content type="html" xml:base="http://localhost:4000/journey-to-use-npm-part-two/">&lt;p&gt;Welcome back. I hope you gained a little bit of insight from my last blog post.
 I thought it would be a great place to start for people to either brush up on old knowledge or gain new knowledge.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -141,94 +141,6 @@ Before NPM v.5.5.0, you &lt;strong&gt;had&lt;/strong&gt; to specify the &lt;stro
 &lt;p&gt;As always, I would always like to know what you thought about the post, so shoot me a DM on my &lt;a href=&quot;&amp;quot;https://twitter.com/jebkor_&amp;quot;&quot;&gt;Twitter&lt;/a&gt; and let me know.&lt;/p&gt;
 
 &lt;p&gt;Take care&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome back. I hope you gained a little bit of insight from my last blog post. I thought it would be a great place to start for people to either brush up on old knowledge or gain new knowledge.</summary></entry><entry><title type="html">Journey to use NPM in your projects. Part One - Installing and using NPM</title><link href="http://localhost:4000/journey-to-use-npm-part-one/" rel="alternate" type="text/html" title="Journey to use NPM in your projects. Part One - Installing and using NPM" /><published>2017-12-03T00:00:00+01:00</published><updated>2017-12-03T00:00:00+01:00</updated><id>http://localhost:4000/journey-to-use-npm-part-one</id><content type="html" xml:base="http://localhost:4000/journey-to-use-npm-part-one/">&lt;p&gt;Why hello there.&lt;/p&gt;
-
-&lt;p&gt;My first real blog post. How exciting! And this blog post will be the first of, likely, many to teach &lt;em&gt;you&lt;/em&gt; about NPM and how you can use it in &lt;em&gt;your&lt;/em&gt; projects. If you’ve always wanted the ‘a-ha’ moment, when trying to figure out NPM, hopefully this journey will help you get there. Hopefully I can lift the veil and show you the ways of NPM.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-npm&quot;&gt;What is NPM?&lt;/h2&gt;
-&lt;p&gt;NPM, or &lt;em&gt;Node Package Manager&lt;/em&gt;, is as the name implies, a manager for packages used with/for Node.js. Packages can be a lot of different things: A CSS framework, a javascript framework or bits and pieces of reusable code you want to use in your projects.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;why-would-i-use-npm&quot;&gt;Why would I use NPM?&lt;/h2&gt;
-&lt;p&gt;If you want to do everything the round-about and tough way, go ahead: rely on CDN’s or zip-downloaded files to use some library or chunk of code. If you, on the other hand would like to do everything the ‘short’ and easy way, use NPM.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; To use NPM packages to their fullest, it’s recommended that you look into build-systems or bundlers. If you know nothing about them, I will have a piece on it at a later date, but it could be worth checking out &lt;a href=&quot;https://gulpjs.com&quot;&gt;Gulp.js&lt;/a&gt; or &lt;a href=&quot;https://webpack.js.org/&quot;&gt;Webpack&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With build-systems or bundlers, you can just include the package in your code, and when the code compiles, the package will be included on your website/in your application, without the need to rely on CDN’s to be up and running, or local files to exist. Neat, right?&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;okay-youve-sold-me-how-do-i-get-npm&quot;&gt;Okay, you’ve sold me. How do I get NPM?&lt;/h2&gt;
-&lt;p&gt;To be able to use NPM on your machine, you need to install Node.js. Node.js, if you don’t know, &lt;em&gt;Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.&lt;/em&gt; - 
-&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To install Node.js, head to the webpage, and download the &lt;em&gt;recommended&lt;/em&gt; version (as of writing this, it’s 8.9.1 LTS). The &lt;em&gt;latest features&lt;/em&gt; version, is the most bleeding and cutting edge version, and are more likely to contain bugs that can impede your workflow, or stop NPM from working. In most cases, download the recommended version.&lt;/p&gt;
-
-&lt;p&gt;You can check if you’ve successfully installed Node.js by opening a CMD or Terminal window, and type:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;node -v&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A version number should now appear. Congrats! You’ve successfully installed Node.js&lt;/p&gt;
-
-&lt;p&gt;Next, is to install NPM. You can do this by typing:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;npm install npm@latest -g&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This will install the latest, stable version of NPM. the &lt;em&gt;-g&lt;/em&gt;, or &lt;em&gt;-global&lt;/em&gt; flag, means NPM will be installed globally, so the NPM keyword can be accessed anywhere on your computer. Other flags are available, and we will explore these later.&lt;/p&gt;
-
-&lt;p&gt;To check if NPM is installed correctly, simply type the following in a CMD window:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;npm -v&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A version number should appear, and that means you have successfully installed NPM. Way to go!
-Now you should be ready to get started with NPM. Go explore some packages!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;dont-leave-me-yet-jesper&quot;&gt;Don’t leave me yet, Jesper!&lt;/h2&gt;
-&lt;p&gt;What, you want and example of usage as well? Fine, I’ll show you, how use your packages in the simplest yet worst way possible, just to get you started.&lt;/p&gt;
-
-&lt;p&gt;Say you wanted to use the framework Moment.js to handle all kinds of dates, all you need to do is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;npm install moment –save&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This will install Moment.js as a dependency to your application, and download the files to a &lt;em&gt;node_modules&lt;/em&gt; folder in your project root. Don’t worry, I will show the flow of installation as well as usage with Gulp.js next time.&lt;/p&gt;
-
-&lt;p&gt;Next what you can do, which I &lt;strong&gt;highly&lt;/strong&gt; suggest &lt;strong&gt;not&lt;/strong&gt; doing, is link the node_modules file directly as a script:&lt;/p&gt;
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;./node_modules/moment/dist/moment.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//or whatever the path is&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I don’t want you to do this, because when your application hits production, the &lt;em&gt;node_modules&lt;/em&gt; folder won’t exist on the server. Or rather, it shouldn’t exist on the server. This is why you would want a build-system or bundler to handle the compilation, where Moment.js is included.&lt;/p&gt;
-
-&lt;p&gt;As my final demonstration, because I’ve already talked for a &lt;em&gt;loooong&lt;/em&gt; while, this is how a file, that is compiled using Gulp.js and Babel, could look like:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'moment'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//import the moment library&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Moment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'MMMM Do YYYY'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// December 3rd 2017&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;That’s it!. When the javascript file is compiled and the &lt;em&gt;bundles/built&lt;/em&gt; file is included on your page, the output should show the current date in a console.log.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;final-words&quot;&gt;Final words&lt;/h2&gt;
-&lt;p&gt;This is the end of Part One of the &lt;em&gt;Journey to use NPM in your project. Part One - Installing and using NPM&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;My next post, will be explaining how to setup a simple Gulp.js project to compile Javascript files, explaining the –save and –save-dev flags in NPM and when to use either –save or –save-dev.&lt;/p&gt;
-
-&lt;p&gt;Untill then, keep it frosty! ⛄&lt;/p&gt;</content><author><name></name></author><summary type="html">Why hello there.</summary></entry><entry><title type="html">Journey to use NPM in your projects. Part One - Installing and using NPM</title><link href="http://localhost:4000/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/" rel="alternate" type="text/html" title="Journey to use NPM in your projects. Part One - Installing and using NPM" /><published>2017-12-03T00:00:00+01:00</published><updated>2017-12-03T00:00:00+01:00</updated><id>http://localhost:4000/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm</id><content type="html" xml:base="http://localhost:4000/journey-to-use-npm-in-your-projects-part-one-installing-and-using-npm/">&lt;p&gt;Why hello there.&lt;/p&gt;
 
 &lt;p&gt;My first real blog post. How exciting! And this blog post will be the first of, likely, many to teach &lt;em&gt;you&lt;/em&gt; about NPM and how you can use it in &lt;em&gt;your&lt;/em&gt; projects. If you’ve always wanted the ‘a-ha’ moment, when trying to figure out NPM, hopefully this journey will help you get there. Hopefully I can lift the veil and show you the ways of NPM.&lt;/p&gt;
 
