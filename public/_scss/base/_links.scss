@@ -1,0 +1,11 @@
+ul.listing li a {
+    border-bottom: 1px dotted #8a8a8a;
+    color: #333;
+    -webkit-text-decoration-color: #333;
+    text-decoration-color: #333;
+}
+
+ul.listing li a:hover {
+    -webkit-animation: disco 3s infinite;
+    animation: disco 3s infinite;
+}

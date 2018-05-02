@@ -4,7 +4,7 @@
 ul.listing {
     list-style: none;
     margin-left: 0;
-    max-width: 550px;
+    max-width: 960px;
 
     h3 {
         border-left: 8px solid #444;
@@ -20,6 +20,7 @@ ul.listing {
     }
 
     li {
+        margin-bottom: 10px;
         a {
             border-bottom: 1px dotted #eaeaea;
             color: #333;

@@ -54,7 +54,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: /:year/:month/:day/:title:output_ext
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
@@ -76,8 +76,8 @@ plugins:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: src/scss
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: public/_scss
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
